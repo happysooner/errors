@@ -20,21 +20,18 @@ func TestNewHappyCommonError(t *testing.T) {
 
 func TestHappyCommonError_GetCode(t *testing.T) {
 	if e.GetCode() != "500" {
-		t.Error("TestNewHappyCommonError failed")
-
+		t.Error("TestHappyCommonError_GetCode failed")
 	}
 }
 
 func TestHappyCommonError_GetMessage(t *testing.T) {
 	if e.GetMessage() != "test" {
-		t.Error("TestNewHappyCommonError failed")
-
+		t.Error("TestHappyCommonError_GetMessage failed")
 	}
 }
 
 func TestHappyCommonError_GetRequestId(t *testing.T) {
 	if e.GetRequestId() != "testReq" {
-		t.Error("TestNewHappyCommonError failed")
-
+		t.Error("TestHappyCommonError_GetRequestId failed")
 	}
 }
