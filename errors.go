@@ -3,9 +3,9 @@ package errors
 import "encoding/json"
 
 type HappyCommonError struct {
-	Code      string `json:"code"`
-	Message   string `json:"message"`
-	RequestId string `json:"requestId"`
+	Code      string `json:"code,omitempty"`
+	Message   string `json:"message,omitempty"`
+	RequestId string `json:"requestId,omitempty"`
 }
 
 func (h *HappyCommonError) Error() string {
