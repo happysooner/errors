@@ -15,11 +15,11 @@ func (h *HappyCommonError) Error() string {
 }
 
 // NewHappyCommonError 创建一个新的错误
-func NewHappyCommonError(code, message, RequestID string) error {
+func NewHappyCommonError(code, message, requestID string) error {
 	return &HappyCommonError{
 		Code:      code,
 		Message:   message,
-		RequestID: RequestID,
+		RequestID: requestID,
 	}
 }
 
